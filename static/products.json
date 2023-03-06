@@ -1,0 +1,23 @@
+[
+ {
+  "title": "silla",
+  "description": "para sentarse",
+  "price": "1000",
+  "thumbnail": "img/silla.jpg",
+  "id": "c15f3f77-eb3c-4880-8c3f-9bbb98a2facb"
+ },
+ {
+  "title": "mesa",
+  "description": "para comer",
+  "price": "2000",
+  "thumbnail": "img/mesa.jpg",
+  "id": "90f508c4-c1c9-48a8-90f6-626ab2183972"
+ },
+ {
+  "title": "cama",
+  "description": "para dormir",
+  "price": "3000",
+  "thumbnail": "img/cama.jpg",
+  "id": "e3d5d39b-ab4b-4d79-9390-d44557aaf916"
+ }
+]
