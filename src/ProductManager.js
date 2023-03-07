@@ -2,6 +2,7 @@ import fs from 'fs/promises'
 import { Product } from './Product.js'
 import crypto, { randomUUID } from 'crypto'
 
+
 export class ProductManager {
     constructor(path){
         this.path = path
@@ -66,5 +67,21 @@ export class ProductManager {
         this.products.splice(index, 1)
 
         await this.write()
+    }
+
+    async updateProduct (id, newProduct) {
+        await this.read();
+
+        let existe = this.products.find(p => p.id === id)
+        if(existe) {
+            let index = this.products.indexOf(existe)
+            this.products[index] = {
+                ...this.products[index],
+                ...newProduct
+            }
+            await this.write()
+        }else{
+            throw new Error('Product not found')
+        }
     }
 }

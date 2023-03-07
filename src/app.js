@@ -18,6 +18,7 @@ app.get('/products', async (req,res) =>{
     }else {
         res.json(products)
     }
+
 })
 
 app.get('/products/:pid', async (req,res) => {
@@ -35,6 +36,17 @@ app.post('/products', async (req,res) => {
     
     let agregado = await pm.addProduct(product)
     res.json(agregado)
+})
+
+app.put('/products/:pid', async (req,res) => {
+    let newProduct = new Product({
+        id:req.params.pid,
+        ...req.body
+    })
+
+    let replaceProduct = await pm.updateProduct(req.params.pid, newProduct)
+    res.json(replaceProduct)
+
 })
 
 app.listen(8080, () => console.log('Servidor funcionando en 8080'))

@@ -1,9 +1,9 @@
 [
  {
-  "title": "silla",
-  "description": "para sentarse",
-  "price": "1000",
-  "thumbnail": "img/silla.jpg",
+  "title": "silla-gamer",
+  "description": "para sentarse y jugar",
+  "price": "2500",
+  "thumbnail": "img/silla-gamer.jpg",
   "id": "c15f3f77-eb3c-4880-8c3f-9bbb98a2facb"
  },
  {
@@ -19,5 +19,19 @@
   "price": "3000",
   "thumbnail": "img/cama.jpg",
   "id": "e3d5d39b-ab4b-4d79-9390-d44557aaf916"
+ },
+ {
+  "title": "tele",
+  "description": "para entretenerse",
+  "price": "5500",
+  "thumbnail": "img/tele.jpg",
+  "id": "525ac60e-ff1a-44e9-aa44-fc509bbc5ac8"
+ },
+ {
+  "title": "sillon",
+  "description": "para confort",
+  "price": "15500",
+  "thumbnail": "img/sillon.jpg",
+  "id": "e8321d1d-ad72-461e-8a90-9844c67014a4"
  }
 ]
